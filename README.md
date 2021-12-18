@@ -70,7 +70,7 @@ kubectl apply -f services-mongo.yaml
 ```
 
 ## 4. hpa 설정 (autoscale)
-metrics 서버 설치 
+metrics 서버 설치 필요
 
 ### react 서버
 ```
