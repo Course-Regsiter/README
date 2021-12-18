@@ -118,6 +118,16 @@ service에서 포트 확인 후 코드에서 데이터베이스 접속, api, cor
 ![image](https://user-images.githubusercontent.com/63990390/146634511-9b7cfb9e-0387-4f10-b422-6c9b20974ddc.png)
 
 ## 실행
+
+### 컨테이너 서버 연결 및 데이터베이스 접속 확인
+![image](https://user-images.githubusercontent.com/63990390/146634800-da487b49-10aa-4796-98ef-eea4e068cf36.png)
+
+### 몽고디비 작동 확인
+![image](https://user-images.githubusercontent.com/63990390/146634873-3fa9d7bb-17e8-49bc-8407-378ca62a62bc.png)  
+![image](https://user-images.githubusercontent.com/63990390/146634897-e1008c72-2ff9-435e-853c-849125eb3005.png)
+
+
+
 웹에서 프론트엔드 서버로 접속 
 
 
