@@ -4,7 +4,7 @@
 Frontend: UI 관련 기능  
 Backend : 회원가입, 로그인, 토큰 발급 등 인증 관련 기능  
 Course-Server: 수강신청 관련 기능  
-
+Infra: 쿠버네티스, 도커 관련 
 
 ## Docker 이미지 빌드
 
