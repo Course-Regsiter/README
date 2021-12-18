@@ -93,7 +93,7 @@ kubectl autoscale deployment mongo-server --min=3 --max=15 --cpu-percent=25
 ```
 
 ## 5. 코드 수정
-service에서 포트 확인 후 코드에서 데이터베이스, api 부분 등 수정
+service에서 포트 확인 후 코드에서 데이터베이스 접속, api, cors 수정
 
 ## 6. 실행
 웹에서 프론트엔드 서버로 접속 
