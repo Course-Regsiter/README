@@ -70,6 +70,7 @@ kubectl apply -f services-mongo.yaml
 ```
 
 ## 4. hpa 설정 (autoscale)
+metrics 서버 설치 
 
 ### react 서버
 ```
@@ -90,3 +91,6 @@ kubectl autoscale deployment node-course-app --min=3 --max=15 --cpu-percent=25
 ```
 kubectl autoscale deployment mongo-server --min=3 --max=15 --cpu-percent=25
 ```
+
+
+
