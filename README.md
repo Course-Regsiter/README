@@ -4,7 +4,7 @@
 
 사설 레지스트리 구축 필요
 
-### React 서버
+### react 서버
 ```
 docker build -t react-app .
 docker tag react-app 192.168.1.10:8443/react-app
@@ -27,10 +27,66 @@ docker push 192.168.1.10:8443/nodecourse-img
 
 ## 2. Deployment 생성
 
-### React 서버
+### react 서버
+```
+kubectl apply -f deployments-react.yaml
+```
 
 ### auth 서버
+```
+kubectl apply -f deployments-auth.yaml
+```
 
 ### course 서버
+```
+kubectl apply -f deployments.yaml
+```
 
 ### mongo 서버
+```
+kubectl apply -f deployments-mongo.yaml
+```
+
+## 3. service 생성
+
+### react 서버
+```
+kubectl apply -f services-react.yaml
+```
+
+### auth 서버
+```
+kubectl apply -f services-auth.yaml
+```
+
+### course 서버
+```
+kubectl apply -f services.yaml
+```
+
+### mongo 서버
+```
+kubectl apply -f services-mongo.yaml
+```
+
+## 4. hpa 설정 (autoscale)
+
+### react 서버
+```
+kubectl autoscale deployment react-app --min=3 --max=15 --cpu-percent=25
+```
+
+### auth 서버
+```
+kubectl autoscale deployment node-auth-app --min=3 --max=15 --cpu-percent=25
+```
+
+### course 서버
+```
+kubectl autoscale deployment node-course-app --min=3 --max=15 --cpu-percent=25
+```
+
+### mongo 서버
+```
+kubectl autoscale deployment mongo-server --min=3 --max=15 --cpu-percent=25
+```
