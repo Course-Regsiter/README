@@ -114,7 +114,7 @@ service에서 포트 확인 후 코드에서 데이터베이스 접속, api, cor
 ### api
 파일 경로: Frontend/src/api/api.js
 
-![image](https://user-images.githubusercontent.com/63990390/146634492-ab81c000-ab05-405b-a495-354e66101c33.png)
+![image](https://user-images.githubusercontent.com/63990390/146634492-ab81c000-ab05-405b-a495-354e66101c33.png)  
 ![image](https://user-images.githubusercontent.com/63990390/146634511-9b7cfb9e-0387-4f10-b422-6c9b20974ddc.png)
 
 ## 실행
