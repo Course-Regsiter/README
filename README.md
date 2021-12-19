@@ -6,7 +6,7 @@ Backend : 회원가입, 로그인, 토큰 발급 등 인증 관련 기능
 Course-Server: 수강신청 관련 기능  
 Infra: 쿠버네티스, 도커 관련 
 
-## Docker 이미지 빌드
+## 1. Docker 이미지 빌드
 
 사전에 사설 레지스트리 구축 필요
 
@@ -31,7 +31,7 @@ docker tag nodecourse-img 192.168.1.10:8443/nodecourse-img
 docker push 192.168.1.10:8443/nodecourse-img
 ```
 
-## Deployment 생성
+## 2. Deployment 생성
 
 ### react 서버
 ```
@@ -75,7 +75,7 @@ kubectl apply -f services.yaml
 kubectl apply -f services-mongo.yaml
 ```
 
-## hpa 설정 (autoscale)
+## 4. hpa 설정 (autoscale)
 
 ### metrics 서버 설치
 ```
@@ -102,7 +102,7 @@ kubectl autoscale deployment node-course-app --min=3 --max=15 --cpu-percent=25
 kubectl autoscale deployment mongo-server --min=3 --max=15 --cpu-percent=25
 ```
 
-## 코드 수정
+## 5. 코드 수정
 service에서 포트 확인 후 코드에서 데이터베이스 접속, api, cors 수정
 
 ### 데이터베이스 접속
@@ -126,7 +126,7 @@ Frontend/src/api/api.js
 ![image](https://user-images.githubusercontent.com/63990390/146634492-ab81c000-ab05-405b-a495-354e66101c33.png)  
 ![image](https://user-images.githubusercontent.com/63990390/146634511-9b7cfb9e-0387-4f10-b422-6c9b20974ddc.png)
 
-## 실행
+## 6. 실행
 
 ### 리액트 서버 연결 확인
 ![image](https://user-images.githubusercontent.com/63990390/146635620-ba9683d6-2d83-42a0-bdf0-fac35d547b19.png)
