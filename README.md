@@ -113,14 +113,15 @@ Course-Server/src/index.js
 ![image](https://user-images.githubusercontent.com/63990390/146634385-a72360a1-fea5-4e83-bff7-16d89c087f17.png)
 
 ### cors
-파일 경로: 
+파일 경로:   
 Backend/src/index.js     
 Course-Server/src/index.js   
 
 ![image](https://user-images.githubusercontent.com/63990390/146634409-88fde0cc-b6d4-45ed-87ef-a4df49a24f2d.png)
 
 ### api
-파일 경로: Frontend/src/api/api.js
+파일 경로:   
+Frontend/src/api/api.js  
 
 ![image](https://user-images.githubusercontent.com/63990390/146634492-ab81c000-ab05-405b-a495-354e66101c33.png)  
 ![image](https://user-images.githubusercontent.com/63990390/146634511-9b7cfb9e-0387-4f10-b422-6c9b20974ddc.png)
