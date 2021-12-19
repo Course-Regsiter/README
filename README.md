@@ -106,7 +106,7 @@ kubectl autoscale deployment mongo-server --min=3 --max=15 --cpu-percent=25
 service에서 포트 확인 후 코드에서 데이터베이스 접속, api, cors 수정
 
 ### 데이터베이스 접속
-파일 경로: 
+파일 경로:  
 Backend/src/index.js   
 Course-Server/src/index.js  
 
